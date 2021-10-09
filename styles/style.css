@@ -1,6 +1,26 @@
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+          }
+}
+
+h1, h2, h3, h4,
+h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+a {
+}
+
+a:hover {
+    opacity: 0.4;
+}
+
 .page {
     min-width: 1100px;
-    max-width: 1600px;
+   /* max-width: 1440px;*/
     margin: 0 auto;
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
@@ -17,13 +37,19 @@
 }
 
 .header {
+    background-color:  #f2f2f2;
+    /* выше установила ограничения для секции */
+}
+
+.header__container {
     display: flex;
     position: relative;
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
-    background-color:  #f2f2f2;
-    /* выше установила ограничения для секции */
+    margin: auto;
+
+    max-width: 1440px;
 }
 
 .header__title {
@@ -69,6 +95,7 @@
     height: 568px;
     width: 568px;
     background-color: #2f80ed;
+    animation: rotation 20s infinite;
 }
 
 .content {
@@ -79,6 +106,8 @@
     padding: 100px 0;
     display: flex;
     justify-content: center;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .two-columns {;
@@ -86,6 +115,8 @@
     justify-content: space-between;
     width: 80%;
     min-width: 784px;
+    margin: auto;
+    max-width: 1440px;
 }
 
 .two-columns__brief {
@@ -119,62 +150,91 @@
     font-weight: bold;
 }
 
-.digits {
-    padding-bottom: 100px;
+.techniques {
+
 }
 
-.section-title {
-    margin: 0 auto;
-    width: 60%;
-    margin-bottom: 20px;
-    line-height: 1.15;
-    font-size: 60px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.section-subtitle {
-    margin: 0 auto;
-    width: 60%;
-    line-height: 34px;
-    font-size: 24px;
-    font-weight: normal;
-    text-align: center;
-}
-
-.table {
-    width: 1100px;
+.cards {
+    width: 920px;
+    max-width: 920px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin: 0 auto;
 }
 
-.table__cell {
-    width: 250px;
-    margin-top: 60px;
+.cards__item {
+    text-align: center;
+    width: 240px;
+    padding-top: 60px;
+    margin-right: 100px;
+
 }
 
-.table__heading {
-    line-height: 1.15;
+.cards__item:nth-last-of-type(3) {
+    margin-right: 0;
+}
+
+.cards__image {
+    margin-bottom: 43px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.cards__title {
     font-size: 24px;
     font-weight: bold;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.cards__description {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 23px;
+    text-align: center;
     margin: 0;
 }
 
-.table__text {
-    line-height: 1.2;
-    font-size: 18px;
-    font-weight: normal;
-    margin-top: 20px;
-    margin-bottom: 0;
+.video {
+    padding-top: 100px;
 }
 
+.video__iframes {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.video__iframe {
+    width: 515px;
+    height: 316px;
+    margin-right: 20px;
+}
+
+.video__iframe:last-child {
+    margin-right: 0;
+}
+
+.oakley {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    padding-top: 160px;
+    background-color: #f2f2f2;
+}
+
+
 .feynman {
+    background-color:  #f2f2f2;
+}
+
+.feynman__container {
     padding-top: 100px;
     position: relative;
-    background-color:  #f2f2f2;
     min-height: 890px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .feynman__title {
@@ -219,6 +279,124 @@
     bottom: 0;
 }
 
+.digits {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-title {
+    margin: 0 auto 20px;
+    width: 60%;
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-subtitle {
+    margin: 0 auto;
+    width: 60%;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.table {
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.table__cell {
+    width: 250px;
+    margin-top: 60px;
+}
+
+.table__heading {
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.table__text {
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.khan {
+    background-color: #f2f2f2;
+    padding-top: 105px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.khan__container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.khan__author {
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: normal;
+}
+
+.khan__title {
+    font-size: 60px;
+    line-height: 1.15;
+    font-weight: bolder;
+}
+
+.khan__quote {
+    max-width: 790px;
+    margin-top: 50px;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+}
+
+.khan__quote-author {
+    margin-top: 36px;
+    font-size: 24px;
+    line-height: 1.15;
+    font-weight: bolder;
+}
+
+.khan__quote-author-subline {
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 1.15;
+    font-weight: normal;
+}
+
+.khan__book-container {
+    display: flex;
+    margin-top: 68px;
+}
+
+.khan__book-pic {
+    width: 620px;
+    height: 608px;
+    margin-right: 48px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.khan__buy-link {
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: normal;
+    color: #2f80ed;
+    text-decoration: none;
+}
+
 .kaufman {
     background-color:  #1f1f1f;
     padding: 90px 0 90px;
@@ -257,15 +435,46 @@
     right: -210px;
     width: 877px;
     height: 877px;
+    animation: rotation 20s infinite;
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 217px;
+}
+
+.resources__logo-zone {
+    display: flex;
+    text-align: center;
+    margin-top: 80px;
+    width: 1100px;
+}
+
+.resources__logo {
+
+}
+
+.resources__logo-pic {
+    object-fit: contain;
+    width: 270px;
+    height: 38px;
 }
 
 .footer {
+    background-color: #1f1f1f;
+}
+
+.footer__container{
     display: flex;
     justify-content: center;
     box-sizing: border-box;
-    background-color: #1f1f1f;
     min-height: 350px;
+    max-width: 1440px;
     padding: 60px 0 40px;
+    margin: auto;
 }
 
 .footer__columns {
