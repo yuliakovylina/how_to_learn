@@ -399,13 +399,19 @@ a:hover {
 
 .kaufman {
     background-color:  #1f1f1f;
+}
+
+.kaufman__container {
     padding: 90px 0 90px;
     position: relative;
     overflow: hidden;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .section-title_theme_dark {
     color: white;
+    z-index: 1;
 }
 
 .section-subtitle_theme_dark {
@@ -414,7 +420,7 @@ a:hover {
 
 .table_theme_dark {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .table__heading_theme_dark {
