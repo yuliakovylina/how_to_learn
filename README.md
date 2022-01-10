@@ -1,3 +1,17 @@
+My_first_web-developing_project PartII 14/03/2020
+
+GENERAL INFO
+Это моя первая проектная работу в Яндекс Практикуме. В ней я использую полученные в ходе курса навыки работы в HTML и CSS.
+
+_ Основые темы: _
+
+Flexbox-верстка
+БЭМ
+GIT
+Анимации и трансформации
+Author: Yulia Koylina E-mail: juliakovylina@gmail.com
+
+Copyright 2020 Yulia Kovylina. All rights reserved.
 https://yuliakovylina.github.io/how_to_learn/
 
 <img width="1267" alt="Снимок экрана 2021-10-09 в 19 20 43" src="https://user-images.githubusercontent.com/61360526/136666438-19782ef5-1c0c-491d-b007-93b44673594e.png">
